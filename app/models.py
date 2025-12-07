@@ -30,6 +30,11 @@ class Car(models.Model):
 
 
 class Booking(models.Model):
+    """
+    Name: Booking
+    Description: This model is used to store booking information for cars.
+    Author: Omar A W
+    """
     user = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
     car = models.ForeignKey(Car, on_delete=models.CASCADE)
     category = models.ForeignKey(Category, on_delete=models.CASCADE, null=True)
